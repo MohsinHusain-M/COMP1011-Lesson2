@@ -1,8 +1,8 @@
 
 public class Hero {
 	//PRIVATE PROPERTIES +++++++++++++++++++++++++++
-	private int strength;
-	private int speed;
+	protected int strength;
+	protected int speed; //protected exposed to subclasses
 	private int health;
 	String name;
 	
@@ -45,7 +45,7 @@ public class Hero {
 		System.out.println(this.name + " is fighting.");
 	}
 	public void run() {
-		System.out.println(this.name +" is Running");
+		System.out.println(this.name +" is Running.");
 	}
 
 
