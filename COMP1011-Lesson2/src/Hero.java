@@ -1,6 +1,6 @@
 
 public class Hero {
-	int strength;
+	private int strength;
 	int speed;
 	int health;
 	String name;
@@ -16,5 +16,13 @@ public class Hero {
 	}
 	public void run() {
 		
+	}
+
+	public int getStrength() {
+		return strength;
+	}
+
+	public void setStrength(int strength) {
+		this.strength = strength;
 	}
 }
