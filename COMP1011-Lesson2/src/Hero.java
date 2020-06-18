@@ -23,6 +23,7 @@ public class Hero {
 	//CONSTRUCTOR ++++++++++++++++++++++++++++++++++
 	public Hero(String name) {
 		this.name = name;
+		generateAbilities();
 	}
 	
 	//PUBLIC METHOD ++++++++++++++++++++++++++++++++
@@ -31,13 +32,14 @@ public class Hero {
 		System.out.println("Strength " + this.strength);
 		System.out.println("Speed " + this.speed);
 		System.out.println("Health " + this.health);
+		System.out.println("+++++++++++++++++++++++++++");
 	}
 	
 	//PRIVATE METHOD +++++++++++++++++++++++++++++++
 	private void generateAbilities() {
-		this.strength = (int) Math.random()*100+1;
-		this.speed = (int) Math.random()*100+1;
-		this.health = (int) Math.random()*100+1;
+		this.strength = (int) (Math.random()*100+1);
+		this.speed = (int) (Math.random()*100+1);
+		this.health = (int) (Math.random()*100+1);
 	}
 	public void fight() {
 		System.out.println(this.name + " is fighting.");
