@@ -1,5 +1,5 @@
 
-public class Hero {
+public class Hero extends Entity {
 	//PRIVATE PROPERTIES +++++++++++++++++++++++++++
 	protected int strength;
 	protected int speed; //protected exposed to subclasses
